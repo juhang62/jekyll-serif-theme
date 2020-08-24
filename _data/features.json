@@ -1,17 +1,17 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients recieve an obligation free consultation.",
+    "title": "First Session Free",
+    "description": "First session is free. Talk to us today",
     "image": "images/features/noun_branding_1885335.svg"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
+    "title": "Always Avaiable and Reliable",
+    "description": "We are always avaiable. Click live chat",
     "image": "images/features/noun_The Process_1885341.svg"
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
+    "title": "Professional Team",
+    "description": "We are professional at what we are doing",
     "image": "images/features/noun_3d modeling_1885342.svg"
   }
 ]

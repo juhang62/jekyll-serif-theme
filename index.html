@@ -4,15 +4,38 @@ layout: default
 bodyClass: page-home
 ---
 
+
+<script>
+//document.addEventListener('DOMContentLoaded', function() {
+
+//   var itm =  document.getElementById('Smallchat').firstChild.contentWindow.document.getElementById('Smallchat');
+//    itm.firstChild.firstChild.click()
+//var cln = itm.cloneNode(true);
+//document.getElementsByClassName("call-phone")[0].appendChild(cln);
+//}, false);
+
+//window.onload = function() {
+// document.getElementsByClassName("Launcher").click();
+//  var x = document.getElementsByClassName("call-phone");
+//  x[0].innerHTML = "Hello World!";
+//};
+
+function myFunction() {
+   var itm =  document.getElementById('Smallchat').firstChild.contentWindow.document.getElementById('Smallchat');
+   itm.firstChild.firstChild.click()
+}
+</script>
+
 <div class="intro pb-4">
   <div class="container">
-    <h1>Serif - Jekyll Small Business Theme.</h1>
-    <p>Our business helps hundreds of customers with their accounting and taxation needs each year.</p>
+    <h1>Peace Maker</h1>
+    <p>We help hundreds of customers with their relationship and settle their arguments each year.</p>
   </div>
 </div>
 
 <div class="container pt-2">
   <div class="call">
+<!--
     <div class="call-box-top">
       <div class="call-phone"><strong>Phone: </strong> {{ site.data.contact.phone }} </div>
       <div class="call-email"><strong>Email: </strong>
@@ -21,8 +44,9 @@ bodyClass: page-home
         </a>
       </div>
     </div>
+-->
     <div class="call-box-bottom">
-      <a href="{{site.baseurl}}/contact" class="button">Contact</a>
+        <button class="button" onclick="myFunction()">Chat with us</button>
     </div>
   </div>
 </div>

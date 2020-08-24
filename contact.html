@@ -3,7 +3,12 @@ title: Contact
 layout: default
 bodyClass: page-contact
 ---
-
+<script>
+function myFunction() {
+   var itm =  document.getElementById('Smallchat').firstChild.contentWindow.document.getElementById('Smallchat');
+   itm.firstChild.firstChild.click()
+}
+</script>
 <div class="intro intro-small">
   <div class="container">
     <div class="row">
@@ -15,60 +20,21 @@ bodyClass: page-contact
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-12 col-md-8">
+    <div class="col-12 col-md-8" style="margin-bottom: 300px;">
+        
+
       <ul>
+        <li>We are always here to help</li>
+
         <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
         <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
             {{ site.data.contact.email }}</a></li>
         {% if site.data.contact.address %}
         <li><strong>Address: </strong>{{ site.data.contact.address }}</li>
         {% endif %}
-      </ul>
-      <h4 class="mt-4">Business Hours</h4>
-      <table class="table table-sm opening-hours-table">
-        <tr>
-          <td class="day font-weight-bold">Monday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Tuesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Wednesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Thursday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Friday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Saturday</td>
-          <td class="opens">Closed</td>
-          <td></td>
-          <td class="closes"></td>
-        </tr>
-        <tr>
-          <td class="day font-weight-bold">Sunday</td>
-          <td class="opens">Closed</td>
-          <td> </td>
-          <td class="closes"></td>
-        </tr>
-      </table>
-    </div>
+
+      </ul> 
+       <button class="button" onclick="myFunction()">Contact us</button>
+    
   </div>
 </div>
